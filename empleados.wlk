@@ -16,11 +16,7 @@ object jeanGray{
 	method puedePasar(_puedePasar){
 		puedePasar = _puedePasar
 	}
-    method entregarPaquete(){
-        return if(self.puedePasar() && paquete.estaPago()){
-            paquete.entregar()
-        }
-    }
+    
 }
 
 object neo{
@@ -43,11 +39,6 @@ object neo{
 	method puedePasar(_puedePasar){
 		puedePasar = _puedePasar
 	}
-    method entregarPaquete(){
-        return if(self.puedePasar() && paquete.estaPago()){
-            paquete.entregar()
-        }
-    }
 }
 
 object saraConnor{
@@ -78,11 +69,6 @@ object saraConnor{
     method peso(){
 		return peso + vehiculo.peso()
 	}
-    method entregarPaquete(){
-        return if(self.puedePasar() && paquete.estaPago()){
-            paquete.entregar()
-        }
-    }
 }
 
 object moto{
