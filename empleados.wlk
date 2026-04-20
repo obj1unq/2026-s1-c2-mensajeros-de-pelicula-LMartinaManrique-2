@@ -2,7 +2,6 @@ import destino.*
 import example.*
 object jeanGray{
 	const puedeLlamar = true
-	var puedePasar = false
 	method puedeLlamar(){
 		return puedeLlamar
 	}
@@ -10,52 +9,25 @@ object jeanGray{
 	method peso(){
 		return 65
 	}
-    method puedePasar(){
-        return puedePasar
-    }
-	method puedePasar(_puedePasar){
-		puedePasar = _puedePasar
-	}
     
 }
 
 object neo{
-	var puedeLlamar = false
-	var puedePasar = false
-
-	method puedeLlamar(){
-		return puedeLlamar
-	}
-
-	method puedeLlamar(_puedeLlamar){
-		puedeLlamar = _puedeLlamar
-	}
+	var property puedeLlamar = false
 	method peso(){
 		return 0
 	}
-    method puedePasar(){
-        return puedePasar
-    }
-	method puedePasar(_puedePasar){
-		puedePasar = _puedePasar
-	}
+   
 }
 
 object saraConnor{
 	var peso = 0
 	var vehiculo = moto
 	const puedeLlamar = false
-    var puedePasar = false
 	
     
     method puedeLlamar(){
         return puedeLlamar
-    }
-    method puedePasar(_puedePasar){
-		puedePasar = _puedePasar
-	}
-    method puedePasar(){
-        return puedePasar
     }
     method vehiculo(){
         return vehiculo
